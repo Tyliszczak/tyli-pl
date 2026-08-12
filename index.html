@@ -31,6 +31,22 @@
   <section class="wrap trasy"><div class="card"><h3>Trasy</h3><p>System obsługi tras dla stałych linii (dla kierowców).</p><span class="status">Dostęp wkrótce</span></div></section>
 </main>
 <footer><div class="wrap footerRow"><span>© <span id="year"></span> Tyliszczak Travel</span><span>Wynajem autokarów, autobusów i busów</span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+let touchStartedAt=0;
+document.addEventListener('touchstart',e=>{
+  if(e.target.closest('a,button')) return;
+  touchStartedAt=Date.now();
+},{passive:true});
+document.addEventListener('touchend',e=>{
+  if(e.target.closest('a,button')) return;
+  if(touchStartedAt && Date.now()-touchStartedAt<500){
+    const sel=window.getSelection?.();
+    if(sel && sel.rangeCount) sel.removeAllRanges();
+  }
+  touchStartedAt=0;
+},{passive:true});
+document.addEventListener('touchcancel',()=>{touchStartedAt=0},{passive:true});
+</script>
 </body>
 </html>
