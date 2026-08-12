@@ -15,16 +15,15 @@
     .heroCard{background:linear-gradient(180deg,rgba(20,35,58,.98),rgba(12,24,41,.98));border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}.heroCard h3{margin:0 0 10px}.heroCard p{font-size:1rem;margin:0}.facts{display:grid;gap:12px;margin-top:20px}.fact{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.fact b{color:var(--accent)}
     section{padding:42px 0}.sectionHead{max-width:760px;margin-bottom:24px}.sectionHead h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em;margin:0 0 10px}.sectionHead p{margin:0;color:var(--muted);line-height:1.65}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(180deg,rgba(18,32,53,.98),rgba(12,25,43,.98));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.card .ico{font-size:30px}.card h3{margin:14px 0 8px}.card p{color:var(--muted);line-height:1.6;margin:0}.card strong{color:#fff}
     .contactBox{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contactPanel{padding:28px}.contactPanel h3{margin-top:0}.contactLines{display:grid;gap:12px}.contactLine{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.contactLine:last-child{border-bottom:0}.contactLine a{text-decoration:none}.contactLine a:hover{text-decoration:underline}.whatsapp{background:#18b66a;color:white}.facebook{background:var(--blue);color:white}
-    .systems{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.systemCard{padding:24px}.systemCard h3{margin:0 0 8px}.systemCard p{color:var(--muted);line-height:1.6}.systemCard a{margin-top:8px}
     footer{padding:38px 0 50px;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);margin-top:34px}.footerRow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     @media(max-width:900px){.hero,.contactBox{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav{display:none}}
-    @media(max-width:620px){.wrap{width:calc(100% - 22px)}.hero{padding:36px 0 20px}.grid,.systems{grid-template-columns:1fr}.heroCard,.card,.contactPanel,.systemCard{padding:20px}.hero h1{font-size:clamp(2.5rem,14vw,4rem)}}
+    @media(max-width:620px){.wrap{width:calc(100% - 22px)}.hero{padding:36px 0 20px}.grid{grid-template-columns:1fr}.heroCard,.card,.contactPanel{padding:20px}.hero h1{font-size:clamp(2.5rem,14vw,4rem)}}
   </style>
 </head>
 <body>
 <header class="wrap topbar">
   <a class="brand" href="#top"><div class="logo">TT</div><div class="brandText"><strong>Tyliszczak Travel</strong><span>Wynajem autobusów i busów</span></div></a>
-  <nav class="nav"><a href="#oferta">Oferta</a><a href="#kontakt">Kontakt</a><a href="#systemy">Systemy</a></nav>
+  <nav class="nav"><a href="#oferta">Oferta</a><a href="#kontakt">Kontakt</a></nav>
 </header>
 
 <main id="top">
@@ -82,14 +81,6 @@
           <a class="btn facebook" href="https://www.facebook.com/TyliszczakTravel">Facebook</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="wrap" id="systemy">
-    <div class="sectionHead"><h2>Nasze systemy</h2><p>Oprócz usług transportowych rozwijamy własne narzędzia do obsługi kursów i tras.</p></div>
-    <div class="systems">
-      <article class="card systemCard"><h3>Kursy</h3><p>System do obsługi kursów, użytkowników i dostępu do aplikacji.</p><a class="btn secondary" href="https://tyliszczak.github.io/Kursy/">Otwórz Kursy</a></article>
-      <article class="card systemCard"><h3>Trasy 2.0</h3><p>Narzędzie do zarządzania trasami – pozostaje jako osobny projekt, dostępny głębiej niż strona główna.</p><a class="btn secondary" href="https://github.com/Tyliszczak/Trasy-2.0">Projekt Trasy 2.0</a></article>
     </div>
   </section>
 </main>
